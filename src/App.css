@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.compass{
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid white;
+  float: left;
+  width: 150px;
+  height: 150px;
+
+  font-weight: 100;
+  border: 1px solid #58595a;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.border-line{
+  border:3px solid lightgrey;
+}
+.spacing{
+  margin-top: 20px;
+}
+.btn-style{
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 11px;
+  margin-right: 10px;
+  background: #3c414a;
+}
+
+.currentData{
+  font-weight: 100;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 200px;
+  padding-right: 10px;
+  border: 1px solid #58595a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.btn-style:hover{
+  cursor: pointer;
+  background: #777777;
+}
+
+.status{
+  width: 60%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.pos_n{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.pos_s{
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 5%); 
+}
+
+.pos_w{
+  position: absolute;
+  left: 0;
+  top:50%;
+  transform: translate(20%, -50%);
+}
+
+.pos_e{
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
